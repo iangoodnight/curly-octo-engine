@@ -1,0 +1,29 @@
+Finished_Product_and_Component_Update_Form: {
+	"TimeStamp": "Date",
+	"Email": "Email",
+	"Type_of_Update": [0,1,2,3],
+	"Finished_Product": {
+		"Description": "Description",
+		"Sage_ID": "Sage_ID",
+		"Cost": "Cost",
+		"Require_WIP_sku": true,
+		"WIP_details": [0,1,2,3,4,5,6,7,8],
+		"Special_Instructions": "Special Instructions"
+	},
+	"Component": [{
+		"Description": "Description",
+		"Skuvault_Title": "Skuvault Title",
+		"Skuvault_Sku": "Skuvault Sku",
+		"Sage_ID": "Sage_ID",
+		"Customer_Supplied": true,
+		"Component_Cost": "Component Cost",
+		"Component_History": [0,1,2],
+		"Supplier": "Supplier"
+	}, {
+		"...":"..."
+	}, {
+		"...:'..."
+	}, {
+		"up to":"8 iterations"
+	}]
+}
