@@ -370,6 +370,8 @@ $(document).ready(function() {
 									"<tr>" +
 										"<th scope='col'>Timestamp</th>" +
 										"<th scope='col'>Email</th>" +
+										"<th scope='col'>Component SkuVault Title</th>" +
+										"<th scope='col'>Component SkuVault	SKU</th>" +
 										"<th scope='col'>New Cost/Price</th>" +
 									"</tr>" +
 								"</thead>" +
@@ -377,6 +379,8 @@ $(document).ready(function() {
 									"<tr>" +
 										"<td>" + moment(current.updated).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
 										"<td>" + current.content.emailaddress.trim() + "</td>" +
+										"<td>" + current.content.componentskuvaulttitle.trim() + "</td>" +
+										"<td>" + current.content.componentskuvaultsku.trim() + "</td>" +
 										"<td>" + (current.content.updatecostpricing ? (current.content.updatecostpricing.trim() + "</td></tr></tbody></table>") : ("N/A</td>" + 
 									"</tr>" + 
 								"</tbody>" + 
