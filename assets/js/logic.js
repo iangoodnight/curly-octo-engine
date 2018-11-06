@@ -389,8 +389,8 @@ $(document).ready(function() {
 									"</tr>" + 
 								"</tbody>" + 
 							"</table>" +
-							"<div class='container>" +
-								"<div class='container' style='border: 2px solid black;'>" +
+							"<div class=\"container\">" +
+								"<div class=\"components container\" style='border: 2px solid black;'>" +
 									"<h5>Add Linked Components</h5>"+
 									"<table class='table'>" +
 										"<thead>" +
