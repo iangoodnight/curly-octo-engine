@@ -1,0 +1,21 @@
+
+body {
+	background-color: #999999;
+}
+
+.main {
+	background-color: #808080;
+}
+
+/*.panel {
+	background-color: #808080;
+}*/
+.components {
+	padding: 0px 10px;
+}
+
+.well {
+	margin: 20px 0px;
+	padding: 10px;
+	background-color: white;
+}
