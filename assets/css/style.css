@@ -5,7 +5,7 @@ body {
 }
 
 .jumbotron {
-	border: 1px solid grey;
+	border: 0px 1px 1px 1px solid black;
 	box-shadow: 0px -5px 10px #333333 inset;
 }
 
@@ -15,9 +15,9 @@ body {
 	border: 1px solid black;
 }
 
-/*.panel {
-	background-color: #808080;
-}*/
+.navbar{
+	border: 1px solid black;
+}
 .components {
 	padding: 0px 10px;
 }
