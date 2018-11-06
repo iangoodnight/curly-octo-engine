@@ -21,6 +21,9 @@ $(document).ready(function() {
 		var entriesArr = [];
 		for (var i = 0; i < entries.length; i++) {
 			var x = {};
+			var additional = "gsx$pleaseincludeanyadditionalworkrequiredandorspecialinstructions.";
+			var info = entries[i][additional].$t;
+			x.info = info;
 			var updated = entries[i].updated.$t;
 			x.updated = updated;
 			var pack = "gsx$pleaseselectallpack-outworkrequiredforthisproduct.";
@@ -197,7 +200,7 @@ $(document).ready(function() {
 										"<td>" + current.content.finishedproductskuvaulttitle.trim() + "</td>" +
 										"<td>" + current.content.finishedproductskuvaultsku.trim() + "</td>" +
 										"<td>" + (current.content.newcostprice ? (current.content.newcostprice.trim() + "</td></tr></tbody></table>")
-											: 			current.content.doesthisfinishedproductrequireawipsku ? ("<ul>" + listBuilder(current.pack_out) + "</ul></td></tr></tbody><table>") 
+											: 			current.content.doesthisfinishedproductrequireawipsku ? ("<ul>" + listBuilder(current.pack_out) + "</ul></td><td>" + current.info + "</td></tr></tbody><table>") 
 											: 			current.content.componentdescription ? ("</td></tr></tbody></table>" +
 												"<div class='container'>" +
 													"<div class='container components' style='border: 2px solid black;'>" +
