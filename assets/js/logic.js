@@ -85,6 +85,7 @@ $(document).ready(function() {
 											"<tr>" +
 												"<th scope='col'>Component Description</th>" +
 												"<th scope='col'>Component Sage ID</th>" +
+												"<th scope'col>Is Customer Supplied</th>" +
 												"<th scope='col'>Supplier</th>" +
 												"<th scope='col'>Cost</th>" +
 												"<th scope='col'>History</th>" +
@@ -93,56 +94,64 @@ $(document).ready(function() {
 										"<tbody>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription ? current.content.componentdescription.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid ? current.content.componentsageid.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid ? current.content.componentsageid.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied ? current.content.isthiscomponentcustomersupplied.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied ? current.content.supplierifnotcustomersupplied.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied ? current.content.componentcostifnotcustomersupplied.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory ? current.content.componenthistory.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_2 ? current.content.componentdescription_2.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_2 ? current.content.componentsageid_2.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_2 ? current.content.componentsageid_2.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_2 ? current.content.isthiscomponentcustomersupplied_2.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_2 ? current.content.supplierifnotcustomersupplied_2.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_2 ? current.content.componentcostifnotcustomersupplied_2.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_2 ? current.content.componenthistory_2.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_3 ? current.content.componentdescription_3.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_3 ? current.content.componentsageid_3.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_3 ? current.content.componentsageid_3.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_3 ? current.content.isthiscomponentcustomersupplied_3.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_3 ? current.content.supplierifnotcustomersupplied_3.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_3 ? current.content.componentcostifnotcustomersupplied_3.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_3 ? current.content.componenthistory_3.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_4 ? current.content.componentdescription_4.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_4 ? current.content.componentsageid_4.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_4 ? current.content.componentsageid_4.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_4 ? current.content.isthiscomponentcustomersupplied_4.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_4 ? current.content.supplierifnotcustomersupplied_4.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_4 ? current.content.componentcostifnotcustomersupplied_4.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_4 ? current.content.componenthistory_4.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_5 ? current.content.componentdescription_5.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_5 ? current.content.componentsageid_5.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_5 ? current.content.componentsageid_5.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_5 ? current.content.isthiscomponentcustomersupplied_5.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_5 ? current.content.supplierifnotcustomersupplied_5.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_5 ? current.content.componentcostifnotcustomersupplied_5.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_5 ? current.content.componenthistory_5.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_6 ? current.content.componentdescription_6.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_6 ? current.content.componentsageid_6.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_6 ? current.content.componentsageid_6.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_6 ? current.content.isthiscomponentcustomersupplied_6.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_6 ? current.content.supplierifnotcustomersupplied_6.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_6 ? current.content.componentcostifnotcustomersupplied_6.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_6 ? current.content.componenthistory_6.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_7 ? current.content.componentdescription_7.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_7 ? current.content.componentsageid_7.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_7 ? current.content.componentsageid_7.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_7 ? current.content.isthiscomponentcustomersupplied_7.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_7 ? current.content.supplierifnotcustomersupplied_7.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_7 ? current.content.componentcostifnotcustomersupplied_7.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_7 ? current.content.componenthistory_7.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_8 ? current.content.componentdescription_8.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_8 ? current.content.componentsageid_8.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_8 ? current.content.componentsageid_8.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_8 ? current.content.isthiscomponentcustomersupplied_8.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_8 ? current.content.supplierifnotcustomersupplied_8.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_8 ? current.content.componentcostifnotcustomersupplied_8.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_8 ? current.content.componenthistory_8.trim() : "----") + "</td>" +	
@@ -208,56 +217,64 @@ $(document).ready(function() {
 															"<tbody>" +
 																"<tr>" +
 																	"<td>" + (current.content.componentdescription ? current.content.componentdescription.trim() : "----") + "</td>" +
-																	"<td>" + (current.content.componentsageid ? current.content.componentsageid.trim() : "----") + "</td>" +		
+																	"<td>" + (current.content.componentsageid ? current.content.componentsageid.trim() : "----") + "</td>" +
+																	"<td>" + (current.content.isthiscomponentcustomersupplied ? current.content.isthiscomponentcustomersupplied.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.supplierifnotcustomersupplied ? current.content.supplierifnotcustomersupplied.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.componentcostifnotcustomersupplied ? current.content.componentcostifnotcustomersupplied.trim() : "----") + "</td>" +	
 																	"<td>" + (current.content.componenthistory ? current.content.componenthistory.trim() : "----") + "</td>" +	
 																"</tr>" +
 																"<tr>" +
 																	"<td>" + (current.content.componentdescription_2 ? current.content.componentdescription_2.trim() : "----") + "</td>" +
-																	"<td>" + (current.content.componentsageid_2 ? current.content.componentsageid_2.trim() : "----") + "</td>" +		
+																	"<td>" + (current.content.componentsageid_2 ? current.content.componentsageid_2.trim() : "----") + "</td>" +
+																	"<td>" + (current.content.isthiscomponentcustomersupplied_2 ? current.content.isthiscomponentcustomersupplied_2.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.supplierifnotcustomersupplied_2 ? current.content.supplierifnotcustomersupplied_2.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.componentcostifnotcustomersupplied_2 ? current.content.componentcostifnotcustomersupplied_2.trim() : "----") + "</td>" +	
 																	"<td>" + (current.content.componenthistory_2 ? current.content.componenthistory_2.trim() : "----") + "</td>" +	
 																"</tr>" +
 																"<tr>" +
 																	"<td>" + (current.content.componentdescription_3 ? current.content.componentdescription_3.trim() : "----") + "</td>" +
-																	"<td>" + (current.content.componentsageid_3 ? current.content.componentsageid_3.trim() : "----") + "</td>" +		
+																	"<td>" + (current.content.componentsageid_3 ? current.content.componentsageid_3.trim() : "----") + "</td>" +
+																	"<td>" + (current.content.isthiscomponentcustomersupplied_3 ? current.content.isthiscomponentcustomersupplied_3.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.supplierifnotcustomersupplied_3 ? current.content.supplierifnotcustomersupplied_3.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.componentcostifnotcustomersupplied_3 ? current.content.componentcostifnotcustomersupplied_3.trim() : "----") + "</td>" +	
 																	"<td>" + (current.content.componenthistory_3 ? current.content.componenthistory_3.trim() : "----") + "</td>" +	
 																"</tr>" +
 																"<tr>" +
 																	"<td>" + (current.content.componentdescription_4 ? current.content.componentdescription_4.trim() : "----") + "</td>" +
-																	"<td>" + (current.content.componentsageid_4 ? current.content.componentsageid_4.trim() : "----") + "</td>" +		
+																	"<td>" + (current.content.componentsageid_4 ? current.content.componentsageid_4.trim() : "----") + "</td>" +
+																	"<td>" + (current.content.isthiscomponentcustomersupplied_4 ? current.content.isthiscomponentcustomersupplied_4.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.supplierifnotcustomersupplied_4 ? current.content.supplierifnotcustomersupplied_4.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.componentcostifnotcustomersupplied_4 ? current.content.componentcostifnotcustomersupplied_4.trim() : "----") + "</td>" +	
 																	"<td>" + (current.content.componenthistory_4 ? current.content.componenthistory_4.trim() : "----") + "</td>" +	
 																"</tr>" +
 																"<tr>" +
 																	"<td>" + (current.content.componentdescription_5 ? current.content.componentdescription_5.trim() : "----") + "</td>" +
-																	"<td>" + (current.content.componentsageid_5 ? current.content.componentsageid_5.trim() : "----") + "</td>" +		
+																	"<td>" + (current.content.componentsageid_5 ? current.content.componentsageid_5.trim() : "----") + "</td>" +
+																	"<td>" + (current.content.isthiscomponentcustomersupplied_5 ? current.content.isthiscomponentcustomersupplied_5.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.supplierifnotcustomersupplied_5 ? current.content.supplierifnotcustomersupplied_5.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.componentcostifnotcustomersupplied_5 ? current.content.componentcostifnotcustomersupplied_5.trim() : "----") + "</td>" +	
 																	"<td>" + (current.content.componenthistory_5 ? current.content.componenthistory_5.trim() : "----") + "</td>" +	
 																"</tr>" +
 																"<tr>" +
 																	"<td>" + (current.content.componentdescription_6 ? current.content.componentdescription_6.trim() : "----") + "</td>" +
-																	"<td>" + (current.content.componentsageid_6 ? current.content.componentsageid_6.trim() : "----") + "</td>" +		
+																	"<td>" + (current.content.componentsageid_6 ? current.content.componentsageid_6.trim() : "----") + "</td>" +
+																	"<td>" + (current.content.isthiscomponentcustomersupplied_6 ? current.content.isthiscomponentcustomersupplied_6.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.supplierifnotcustomersupplied_6 ? current.content.supplierifnotcustomersupplied_6.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.componentcostifnotcustomersupplied_6 ? current.content.componentcostifnotcustomersupplied_6.trim() : "----") + "</td>" +	
 																	"<td>" + (current.content.componenthistory_6 ? current.content.componenthistory_6.trim() : "----") + "</td>" +	
 																"</tr>" +
 																"<tr>" +
 																	"<td>" + (current.content.componentdescription_7 ? current.content.componentdescription_7.trim() : "----") + "</td>" +
-																	"<td>" + (current.content.componentsageid_7 ? current.content.componentsageid_7.trim() : "----") + "</td>" +		
+																	"<td>" + (current.content.componentsageid_7 ? current.content.componentsageid_7.trim() : "----") + "</td>" +
+																	"<td>" + (current.content.isthiscomponentcustomersupplied_7 ? current.content.isthiscomponentcustomersupplied_7.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.supplierifnotcustomersupplied_7 ? current.content.supplierifnotcustomersupplied_7.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.componentcostifnotcustomersupplied_7 ? current.content.componentcostifnotcustomersupplied_7.trim() : "----") + "</td>" +	
 																	"<td>" + (current.content.componenthistory_7 ? current.content.componenthistory_7.trim() : "----") + "</td>" +	
 																"</tr>" +
 																"<tr>" +
 																	"<td>" + (current.content.componentdescription_8 ? current.content.componentdescription_8.trim() : "----") + "</td>" +
-																	"<td>" + (current.content.componentsageid_8 ? current.content.componentsageid_8.trim() : "----") + "</td>" +		
+																	"<td>" + (current.content.componentsageid_8 ? current.content.componentsageid_8.trim() : "----") + "</td>" +
+																	"<td>" + (current.content.isthiscomponentcustomersupplied_8 ? current.content.isthiscomponentcustomersupplied_8.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.supplierifnotcustomersupplied_8 ? current.content.supplierifnotcustomersupplied_8.trim() : "----") + "</td>" +		
 																	"<td>" + (current.content.componentcostifnotcustomersupplied_8 ? current.content.componentcostifnotcustomersupplied_8.trim() : "----") + "</td>" +	
 																	"<td>" + (current.content.componenthistory_8 ? current.content.componenthistory_8.trim() : "----") + "</td>" +	
@@ -294,6 +311,7 @@ $(document).ready(function() {
 											"<tr>" +
 												"<th scope='col'>Component Description</th>" +
 												"<th scope='col'>Component Sage ID</th>" +
+												"<th scope'col>Is Customer Supplied</th>" +
 												"<th scope='col'>Supplier</th>" +
 												"<th scope='col'>Cost</th>" +
 												"<th scope='col'>History</th>" +
@@ -302,56 +320,64 @@ $(document).ready(function() {
 										"<tbody>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription ? current.content.componentdescription.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid ? current.content.componentsageid.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid ? current.content.componentsageid.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied ? current.content.isthiscomponentcustomersupplied.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied ? current.content.supplierifnotcustomersupplied.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied ? current.content.componentcostifnotcustomersupplied.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory ? current.content.componenthistory.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_2 ? current.content.componentdescription_2.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_2 ? current.content.componentsageid_2.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_2 ? current.content.componentsageid_2.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_2 ? current.content.isthiscomponentcustomersupplied_2.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_2 ? current.content.supplierifnotcustomersupplied_2.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_2 ? current.content.componentcostifnotcustomersupplied_2.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_2 ? current.content.componenthistory_2.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_3 ? current.content.componentdescription_3.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_3 ? current.content.componentsageid_3.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_3 ? current.content.componentsageid_3.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_3 ? current.content.isthiscomponentcustomersupplied_3.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_3 ? current.content.supplierifnotcustomersupplied_3.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_3 ? current.content.componentcostifnotcustomersupplied_3.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_3 ? current.content.componenthistory_3.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_4 ? current.content.componentdescription_4.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_4 ? current.content.componentsageid_4.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_4 ? current.content.componentsageid_4.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_4 ? current.content.isthiscomponentcustomersupplied_4.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_4 ? current.content.supplierifnotcustomersupplied_4.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_4 ? current.content.componentcostifnotcustomersupplied_4.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_4 ? current.content.componenthistory_4.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_5 ? current.content.componentdescription_5.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_5 ? current.content.componentsageid_5.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_5 ? current.content.componentsageid_5.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_5 ? current.content.isthiscomponentcustomersupplied_5.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_5 ? current.content.supplierifnotcustomersupplied_5.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_5 ? current.content.componentcostifnotcustomersupplied_5.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_5 ? current.content.componenthistory_5.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_6 ? current.content.componentdescription_6.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_6 ? current.content.componentsageid_6.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_6 ? current.content.componentsageid_6.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_6 ? current.content.isthiscomponentcustomersupplied_6.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_6 ? current.content.supplierifnotcustomersupplied_6.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_6 ? current.content.componentcostifnotcustomersupplied_6.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_6 ? current.content.componenthistory_6.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_7 ? current.content.componentdescription_7.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_7 ? current.content.componentsageid_7.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_7 ? current.content.componentsageid_7.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_7 ? current.content.isthiscomponentcustomersupplied_7.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_7 ? current.content.supplierifnotcustomersupplied_7.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_7 ? current.content.componentcostifnotcustomersupplied_7.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_7 ? current.content.componenthistory_7.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_8 ? current.content.componentdescription_8.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_8 ? current.content.componentsageid_8.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_8 ? current.content.componentsageid_8.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_8 ? current.content.isthiscomponentcustomersupplied_8.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_8 ? current.content.supplierifnotcustomersupplied_8.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_8 ? current.content.componentcostifnotcustomersupplied_8.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_8 ? current.content.componenthistory_8.trim() : "----") + "</td>" +	
@@ -393,6 +419,7 @@ $(document).ready(function() {
 											"<tr>" +
 												"<th scope='col'>Component Description</th>" +
 												"<th scope='col'>Component Sage ID</th>" +
+												"<th scope'col>Is Customer Supplied</th>" +
 												"<th scope='col'>Supplier</th>" +
 												"<th scope='col'>Cost</th>" +
 												"<th scope='col'>History</th>" +
@@ -401,56 +428,64 @@ $(document).ready(function() {
 										"<tbody>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription ? current.content.componentdescription.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid ? current.content.componentsageid.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid ? current.content.componentsageid.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied ? current.content.isthiscomponentcustomersupplied.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied ? current.content.supplierifnotcustomersupplied.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied ? current.content.componentcostifnotcustomersupplied.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory ? current.content.componenthistory.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_2 ? current.content.componentdescription_2.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_2 ? current.content.componentsageid_2.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_2 ? current.content.componentsageid_2.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_2 ? current.content.isthiscomponentcustomersupplied_2.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_2 ? current.content.supplierifnotcustomersupplied_2.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_2 ? current.content.componentcostifnotcustomersupplied_2.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_2 ? current.content.componenthistory_2.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_3 ? current.content.componentdescription_3.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_3 ? current.content.componentsageid_3.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_3 ? current.content.componentsageid_3.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_3 ? current.content.isthiscomponentcustomersupplied_3.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_3 ? current.content.supplierifnotcustomersupplied_3.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_3 ? current.content.componentcostifnotcustomersupplied_3.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_3 ? current.content.componenthistory_3.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_4 ? current.content.componentdescription_4.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_4 ? current.content.componentsageid_4.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_4 ? current.content.componentsageid_4.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_4 ? current.content.isthiscomponentcustomersupplied_4.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_4 ? current.content.supplierifnotcustomersupplied_4.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_4 ? current.content.componentcostifnotcustomersupplied_4.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_4 ? current.content.componenthistory_4.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_5 ? current.content.componentdescription_5.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_5 ? current.content.componentsageid_5.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_5 ? current.content.componentsageid_5.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_5 ? current.content.isthiscomponentcustomersupplied_5.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_5 ? current.content.supplierifnotcustomersupplied_5.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_5 ? current.content.componentcostifnotcustomersupplied_5.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_5 ? current.content.componenthistory_5.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_6 ? current.content.componentdescription_6.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_6 ? current.content.componentsageid_6.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_6 ? current.content.componentsageid_6.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_6 ? current.content.isthiscomponentcustomersupplied_6.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_6 ? current.content.supplierifnotcustomersupplied_6.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_6 ? current.content.componentcostifnotcustomersupplied_6.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_6 ? current.content.componenthistory_6.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_7 ? current.content.componentdescription_7.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_7 ? current.content.componentsageid_7.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_7 ? current.content.componentsageid_7.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_7 ? current.content.isthiscomponentcustomersupplied_7.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_7 ? current.content.supplierifnotcustomersupplied_7.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_7 ? current.content.componentcostifnotcustomersupplied_7.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_7 ? current.content.componenthistory_7.trim() : "----") + "</td>" +	
 											"</tr>" +
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_8 ? current.content.componentdescription_8.trim() : "----") + "</td>" +
-												"<td>" + (current.content.componentsageid_8 ? current.content.componentsageid_8.trim() : "----") + "</td>" +		
+												"<td>" + (current.content.componentsageid_8 ? current.content.componentsageid_8.trim() : "----") + "</td>" +
+												"<td>" + (current.content.isthiscomponentcustomersupplied_8 ? current.content.isthiscomponentcustomersupplied_8.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.supplierifnotcustomersupplied_8 ? current.content.supplierifnotcustomersupplied_8.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied_8 ? current.content.componentcostifnotcustomersupplied_8.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory_8 ? current.content.componenthistory_8.trim() : "----") + "</td>" +	
