@@ -80,7 +80,7 @@ $(document).ready(function() {
 							"<div class='container'>" +
 								"<div class='container components' style='border: 2px solid black;'>" +
 									"<h5>Linked Components</h5>"+
-									"<table class='table'>" +
+									"<table class='table table-striped'>" +
 										"<thead>" +
 											"<tr>" +
 												"<th scope='col'>Component Description</th>" +
@@ -99,7 +99,7 @@ $(document).ready(function() {
 												"<td>" + (current.content.supplierifnotcustomersupplied ? current.content.supplierifnotcustomersupplied.trim() : "----") + "</td>" +		
 												"<td>" + (current.content.componentcostifnotcustomersupplied ? current.content.componentcostifnotcustomersupplied.trim() : "----") + "</td>" +	
 												"<td>" + (current.content.componenthistory ? current.content.componenthistory.trim() : "----") + "</td>" +	
-											"</tr>" +
+											"</tr>" + 
 											"<tr>" +
 												"<td>" + (current.content.componentdescription_2 ? current.content.componentdescription_2.trim() : "----") + "</td>" +
 												"<td>" + (current.content.componentsageid_2 ? current.content.componentsageid_2.trim() : "----") + "</td>" +
@@ -204,7 +204,7 @@ $(document).ready(function() {
 												"<div class='container'>" +
 													"<div class='container components' style='border: 2px solid black;'>" +
 														"<h5>Update Linked Components</h5>"+
-														"<table class='table'>" +
+														"<table class='table table-striped'>" +
 															"<thead>" +
 																"<tr>" +
 																	"<th scope='col'>Component Description</th>" +
@@ -306,7 +306,7 @@ $(document).ready(function() {
 							"<div class='container'>" +
 								"<div class='container components' style='border: 2px solid black;'>" +
 									"<h5>Add Linked Components</h5>"+
-									"<table class='table'>" +
+									"<table class='table table-striped'>" +
 										"<thead>" +
 											"<tr>" +
 												"<th scope='col'>Component Description</th>" +
@@ -414,7 +414,7 @@ $(document).ready(function() {
 							"<div class=\"container\">" +
 								"<div class=\"components container\" style='border: 2px solid black;'>" +
 									"<h5>Add Linked Components</h5>"+
-									"<table class='table'>" +
+									"<table class='table table-striped'>" +
 										"<thead>" +
 											"<tr>" +
 												"<th scope='col'>Component Description</th>" +
