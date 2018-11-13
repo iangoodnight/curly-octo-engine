@@ -21,6 +21,8 @@ $(document).ready(function() {
 			var additional = "gsx$pleaseincludeanyadditionalworkrequiredandorspecialinstructions.";
 			var info = entries[i][additional].$t;
 			x.info = info;
+			var timeStamp = "gsx$timestamp";
+			x.timestamp =  entries[i][timeStamp].$t;
 			var updated = entries[i].updated.$t;
 			x.updated = updated;
 			var pack = "gsx$pleaseselectallpack-outworkrequiredforthisproduct.";
@@ -47,6 +49,7 @@ $(document).ready(function() {
 		var linkBank = "";		
 		for (var k = 0; k < arr.length; k++) {
 			current = arr[k];
+			console.log("current: " + current)
 			var wellSection = $("<div>");
 			wellSection.addClass("well");
 			wellSection.attr("id", "response-well-" + responseCounter);
@@ -69,7 +72,7 @@ $(document).ready(function() {
 								"</thead>" +
 								"<tbody>" + 
 									"<tr>" +
-										"<td>" + moment(current.updated).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
+										"<td>" + moment(current.timestamp).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
 										"<td>" + current.content.emailaddress.trim() + "</td>" +
 										"<td>" + current.content.finishedproductdescription.trim() + "</td>" +
 										"<td>" + current.content.finishedproductsageid.trim() + "</td>" +
@@ -194,7 +197,7 @@ $(document).ready(function() {
 								"</thead>" +
 								"<tbody>" + 
 									"<tr>" +
-										"<td>" + moment(current.updated).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
+										"<td>" + moment(current.timestamp).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
 										"<td>" + current.content.emailaddress.trim() + "</td>" +
 										"<td>" + current.content.finishedproductskuvaulttitle.trim() + "</td>" +
 										"<td>" + current.content.finishedproductskuvaultsku.trim() + "</td>" +
@@ -298,7 +301,7 @@ $(document).ready(function() {
 								"</thead>" +
 								"<tbody>" + 
 									"<tr>" +
-										"<td>" + moment(current.updated).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
+										"<td>" + moment(current.timestamp).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
 										"<td>" + current.content.emailaddress.trim() + "</td>" +
 									"</tr>" +
 								"</tbody>" +
@@ -403,7 +406,7 @@ $(document).ready(function() {
 								"</thead>" +
 								"<tbody>" + 
 									"<tr>" +
-										"<td>" + moment(current.updated).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
+										"<td>" + moment(current.timestamp).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
 										"<td>" + current.content.emailaddress.trim() + "</td>" +
 										"<td>" + current.content.componentskuvaulttitle.trim() + "</td>" +
 										"<td>" + current.content.componentskuvaultsku.trim() + "</td>" +
