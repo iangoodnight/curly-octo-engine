@@ -176,6 +176,7 @@ $(document).ready(function() {
 						}
 						return list
 					}
+					console.log("current.content: " + JSON.stringify(current.content));
 					$('#response-well-' + responseCounter)
 						.append(
 							"<h4 class='response-type'>" + current.content.typeofupdate.trim() + "</h4>" +
@@ -199,8 +200,8 @@ $(document).ready(function() {
 									"<tr>" +
 										"<td>" + moment(current.timestamp).format('MMMM Do YYYY, h:mm:ss a') + "</td>" +
 										"<td>" + current.content.emailaddress.trim() + "</td>" +
-										"<td>" + current.content.finishedproductskuvaulttitle.trim() + "</td>" +
-										"<td>" + current.content.finishedproductskuvaultsku.trim() + "</td>" +
+										"<td>" + current.content.currentfinishedproductskuvaulttitle.trim() + "</td>" +
+										"<td>" + current.content.currentfinishedproductskuvaultsku.trim() + "</td>" +
 										"<td>" + (current.content.newcostprice ? (current.content.newcostprice.trim() + "</td></tr></tbody></table>")
 											: 			current.content.doesthisfinishedproductrequireawipsku ? ("<ul>" + listBuilder(current.pack_out) + "</ul></td><td>" + current.info + "</td></tr></tbody><table>") 
 											: 			current.content.componentdescription ? ("</td></tr></tbody></table>" +
@@ -514,6 +515,7 @@ $(document).ready(function() {
     success : function(res, status){
         console.log('status : ' + status);
         var parsed = parseData(res);
+        console.log("parsed: " + parsed);
         printData(parsed);
     },
     error : function(res, status, error){
