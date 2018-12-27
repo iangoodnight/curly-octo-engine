@@ -191,7 +191,7 @@ $(document).ready(function() {
 										"<th scope='col'>Update Cost</th>" :
 										info === "Pack-Out/WIP Details" ? 
 										"<th scope='col'>Pack-Out Work Required</th><th>Notes</th>" :
-										"<th scope='col'>---</th>"
+										"<th scope='col'></th>"
 										 )
 										 +
 									"</tr>" +
